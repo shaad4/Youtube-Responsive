@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="youtubeclone.css">
+</head>
+<body>
+   <header>
+  <nav class="navbar navbar-expand-lg nav-main fixed-top">
+    <div class="container-fluid px-2">
+      <!-- Left Section -->
+      <div class="d-flex align-items-center">
+        <button class="list-btn p-2 me-2 d-none d-sm-block d-md-block d-xl-block d-xxl-block" data-bs-toggle="collapse"  data-bs-target="#sidebar"   type="button">
+          <i class="bi bi-list list-icon"></i>
+        </button>
+        <a href="#" class="me-2">
+          <img class="img-fluid main-logo" src="Images/main-logo.jpg"  alt="Logo">
+        </a>
+      </div>
+
+      <!-- Center Section (Search bar) -->
+      <div class="flex-grow-1 d-none d-md-flex justify-content-center">
+        <div class="input-group search-bar">
+          <input type="search" class="form-control rounded-pill border-end-0 input-search" placeholder="Search">
+          <button class="btn btn-outline-secondary ms-n3 input-btn" type="button">
+            <i class="bi bi-search"></i>
+          </button>
+
+
+          <button class="mic-btn rounded-pill d-none d-lg-inline">
+            <i class="bi bi-mic-fill text-white"></i>
+          </button>
+
+        </div>
+      </div>
+      
+
+      <!-- Right Section -->
+      <div class="d-flex align-items-center">
+        <button class="create-plus rounded-pill d-none d-md-inline">
+          <i class="bi bi-plus"></i> Create
+        </button>
+
+        <button class="rounded-pill bell-btn">
+          <i class="bi bi-bell text-white"></i>
+        </button>
+
+        <img class="profile-btn rounded-pill" src="Images/profile-pic.jpg"  alt="Profile">
+      </div>
+    </div>
+  </nav>
+
+
+
+     
+
+  
+</header>
+
+
+
+<section class="d-flex  ">
+  <aside class="sidebar  collapse " style="width: 20%;" id="sidebar" >
+    <nav class="nav flex-column">
+      <a class="nav-link active text-white" href="#"><i class="bi bi-house-door-fill ps-2"></i><span class="label ps-2">Home</span></a>
+      <a class="nav-link text-white" href="#"><i class="bi bi-file-play-fill ps-2"></i><span class="label ps-2">Shorts</span></a>
+      <a class="nav-link text-white" href="#"><i class="bi bi-play-btn-fill ps-2"></i><span class="label ps-2">Subscriptions</span></a>
+      <hr class="text-white my-2">
+      <a class="nav-link fw-bold	text-white" href="#"><span class="label">You 	&gt;</span></a>
+      <a class="nav-link text-white" href="#"><i class="bi bi-clock-history ps-2"></i><span class="label ps-2">History</span></a>
+      <a class="nav-link text-white" href="#"><i class="bi bi-clock-history ps-2"></i><span class="label ps-2">Playlists</span></a>
+      <a class="nav-link text-white" href="#"><i class="bi bi-play-btn-fill ps-2"></i><span class="label ps-2">Your videos</span></a>
+      <a class="nav-link text-white" href="#"><i class="bi bi-clock ps-2"></i><span class="label ps-2">Watch Later</span></a>
+      <a class="nav-link text-white" href="#"><i class="bi bi-hand-thumbs-up ps-2"></i><span class="label ps-2">Liked videos</span></a>
+      <a class="nav-link text-white" href="#"><i class="bi bi-download ps-2"></i><span class="label ps-2">Downloads</span></a>
+      <hr class="text-white my-2">
+      <a class="nav-link fw-bold text-white" href="#"><span class="label ps-2">Subscriptions</span></a>
+      <a class="nav-link text-white" href="#"><span class="label ps-2">Brototype</span></a>
+      <a class="nav-link text-white" href="#"><span class="label ps-2">call Me Shazzam</span></a>
+
+    </nav>
+  </aside>
+
+  <aside class="close-sidebar flex-column position-fixed d-none d-md-block d-xl-block d-xxl-block" style="width: 8%;" >
+    <div class="card1">
+    <a class="nav-link active" href="#"><i class="bi bi-house-door-fill ps-4 ms-2"></i></a>
+    <span class="label ps-3 fs-6">Home</span>
+    </div>
+
+    <div class="card1">
+    <a class="nav-link active" href="#"><i class="bi bi-file-play-fill ps-4 ms-2"></i></a>
+    <span class="label ps-3 fs-6">Shorts</span>
+    </div>
+
+
+    <div class="card1">
+    <a class="nav-link active" href="#"><i class="bi bi-play-btn-fill ps-4 ms-2"></i></a>
+    <span class="label ps-3 fs-6">Subscription</span>
+    </div>
+
+    <div class="card1">
+    <a class="nav-link active" href="#"><i class="bi bi-person-circle ps-4 ms-2"></i></a>
+    <span class="label ps-4 fs-6">You</span>
+    </div>
+
+    <div class="card1">
+    <a class="nav-link active" href="#"><i class="bi bi-download ps-4 ms-2"></i></a>
+    <span class="label ps-3 fs-6">Home</span>
+    </div>
+  </aside>
+
+  <main class="container d-flex" style="width: 80%;">
+    <div class="row" style="margin-top: 129px;">
+       <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+            <div class="card youtube-card border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="Images/thumbnails/thumb1.jpg" loading="lazy"  class="card-img-top rounded-3" alt="Video thumbnail">
+                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1" style="font-size: 0.8rem;">10:45</span>
+              </div>
+              <div class="card-body p-2 d-flex">
+                <div class="flex-shrink-0 me-2">
+                  <img src="Images/channel icon/channels1_profile.jpg"  class="rounded-circle" width="36" height="36" alt="Channel icon">
+                </div>
+                <div>
+                  <h6 class="card-title text-white mb-1" style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">When Messi Walked Alone at Anfield</h6>
+                  <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">SombreroFIicks</p>
+                  <p class="card-text text-secondary" style="font-size: 0.8rem;">41K views · 2 hours ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+            <div class="card youtube-card border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="Images/thumbnails/t2.jpg"  class="card-img-top rounded-3" alt="Video thumbnail">
+                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1" style="font-size: 0.8rem;">10:45</span>
+              </div>
+              <div class="card-body p-2 d-flex">
+                <div class="flex-shrink-0 me-2">
+                  <img src="Images/channel icon/channels2_profile.jpg"  class="rounded-circle" width="36" height="36" alt="Channel icon">
+                </div>
+                <div>
+                  <h6 class="card-title text-white mb-1" style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">CSS Battles 3! Recreate an Image with CSS</h6>
+                  <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">Syntax.</p>
+                  <p class="card-text text-secondary" style="font-size: 0.8rem;">413K views · 2 months ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+            <div class="card youtube-card border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="Images/thumbnails/t3.jpg"  class="card-img-top rounded-3" alt="Video thumbnail">
+                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1" style="font-size: 0.8rem;">10:45</span>
+              </div>
+              <div class="card-body p-2 d-flex">
+                <div class="flex-shrink-0 me-2">
+                  <img src="Images/channel icon/channels3_profile.jpg"  class="rounded-circle" width="36" height="36" alt="Channel icon">
+                </div>
+                <div>
+                  <h6 class="card-title text-white mb-1" style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Skilled But Still Jobless? Do this now!</h6>
+                  <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">BrotoType Malayalam</p>
+                  <p class="card-text text-secondary" style="font-size: 0.8rem;">21K views · 1 day ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <div class="col-12 col-md-6 col-lg-4 col-lg- col-xxl-3 mb-4">
+            <div class="card youtube-card border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="Images/thumbnails/t4.jpg"  class="card-img-top rounded-3" alt="Video thumbnail">
+                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1" style="font-size: 0.8rem;">10:45</span>
+              </div>
+              <div class="card-body p-2 d-flex">
+                <div class="flex-shrink-0 me-2">
+                  <img src="Images/channel icon/channel4_profile.jpg"  class="rounded-circle" width="36" height="36" alt="Channel icon">
+                </div>
+                <div>
+                  <h6 class="card-title text-white mb-1" style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">JavaScript Tutorial Full Course - Beginner to Pro</h6>
+                  <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">SuperSimpleDev</p>
+                  <p class="card-text text-secondary" style="font-size: 0.8rem;">1M views · 5 Years ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+            <div class="card youtube-card border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="Images/thumbnails/t5.jpg"  class="card-img-top rounded-3" alt="Video thumbnail">
+                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1" style="font-size: 0.8rem;">15:45</span>
+              </div>
+              <div class="card-body p-2 d-flex">
+                <div class="flex-shrink-0 me-2">
+                  <img src="Images/channel icon/channels5_profile.jpg"  class="rounded-circle" width="36" height="36" alt="Channel icon">
+                </div>
+                <div>
+                  <h6 class="card-title text-white mb-1" style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Arsenel Football Match Highlight</h6>
+                  <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">Arsenel</p>
+                  <p class="card-text text-secondary" style="font-size: 0.8rem;">200K views · 15 hours ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+            <div class="card youtube-card border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="Images/thumbnails/t6.jpg"  class="card-img-top rounded-3" alt="Video thumbnail">
+                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1" style="font-size: 0.8rem;">34:45</span>
+              </div>
+              <div class="card-body p-2 d-flex">
+                <div class="flex-shrink-0 me-2">
+                  <img src="Images/channel icon/channels1_profile.jpg"   class="rounded-circle" width="36" height="36" alt="Channel icon">
+                </div>
+                <div>
+                  <h6 class="card-title text-white mb-1" style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Breaking Bad | Scene 1</h6>
+                  <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">Crime City</p>
+                  <p class="card-text text-secondary" style="font-size: 0.8rem;">4K views · 3 months ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+            <div class="card youtube-card border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="Images/thumbnails/t7.jpg"  class="card-img-top rounded-3" alt="Video thumbnail">
+                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1" style="font-size: 0.8rem;">6:45</span>
+              </div>
+              <div class="card-body p-2 d-flex">
+                <div class="flex-shrink-0 me-2">
+                  <img src="Images/channel icon/channels7_profile.jpg"  class="rounded-circle" width="36" height="36" alt="Channel icon">
+                </div>
+                <div>
+                  <h6 class="card-title text-white mb-1" style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">ARJN X KDS X RONN - NERA (Official Music Video) | Def Jam India | Latest Malayalam Rap Song</h6>
+                  <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">MONEY VERSE RECORDS</p>
+                  <p class="card-text text-secondary" style="font-size: 0.8rem;">3M views · 2 Months ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+            <div class="card youtube-card border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="Images/thumbnails/t8.jpg"  class="card-img-top rounded-3" alt="Video thumbnail">
+                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1" style="font-size: 0.8rem;">10:45</span>
+              </div>
+              <div class="card-body p-2 d-flex">
+                <div class="flex-shrink-0 me-2">
+                  <img src="Images/channel icon/channels8_profile.jpg"  class="rounded-circle" width="36" height="36" alt="Channel icon">
+                </div>
+                <div>
+                  <h6 class="card-title text-white mb-1" style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">[FREE] Dark Drill Type Beat - "PSYCHO" | UK,NY Drill Instrumental 2025</h6>
+                  <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">Musix Beats</p>
+                  <p class="card-text text-secondary" style="font-size: 0.8rem;">41K views · 2 hours ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+            <div class="card youtube-card border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="Images/thumbnails/t9.jpg"  class="card-img-top rounded-3" alt="Video thumbnail">
+                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1" style="font-size: 0.8rem;">10:45</span>
+              </div>
+              <div class="card-body p-2 d-flex">
+                <div class="flex-shrink-0 me-2">
+                  <img src="Images/channel icon/channels9_profile.jpg"  class="rounded-circle" width="36" height="36" alt="Channel icon">
+                </div>
+                <div>
+                  <h6 class="card-title text-white mb-1" style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">ASMR Programming - Coding Pacman - No Talking</h6>
+                  <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">Code Friction</p>
+                  <p class="card-text text-secondary" style="font-size: 0.8rem;">41K views · 9 hours ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+            <div class="card youtube-card border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="Images/thumbnails/t10.jpg"  class="card-img-top rounded-3" alt="Video thumbnail">
+                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1" style="font-size: 0.8rem;">10:45</span>
+              </div>
+              <div class="card-body p-2 d-flex">
+                <div class="flex-shrink-0 me-2">
+                  <img src="Images/channel icon/channels10_profile.jpg"  class="rounded-circle" width="36" height="36" alt="Channel icon">
+                </div>
+                <div>
+                  <h6 class="card-title text-white mb-1" style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">ALIF - Dabzee. SA. Abraw</h6>
+                  <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">Dabzee</p>
+                  <p class="card-text text-secondary" style="font-size: 0.8rem;">413K views · 1 year ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+            <div class="card youtube-card border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="Images/thumbnails/t11.jpg"  class="card-img-top rounded-3" alt="Video thumbnail">
+                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1" style="font-size: 0.8rem;">10:45</span>
+              </div>
+              <div class="card-body p-2 d-flex">
+                <div class="flex-shrink-0 me-2">
+                  <img src="Images/channel icon/channels11_profile.jpg"   class="rounded-circle" width="36" height="36" alt="Channel icon">
+                </div>
+                <div>
+                  <h6 class="card-title text-white mb-1" style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">The Day Messi Walked Like 1000 Level Boss of Football after Legendary Show ! [HD]</h6>
+                  <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">Messi Magic</p>
+                  <p class="card-text text-secondary" style="font-size: 0.8rem;">41K views · 2 hours ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4">
+            <div class="card youtube-card border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="Images/thumbnails/t12.jpg" class="card-img-top rounded-3"  alt="Video thumbnail">
+                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded-1 m-1" style="font-size: 0.8rem;">10:45</span>
+              </div>
+              <div class="card-body p-2 d-flex">
+                <div class="flex-shrink-0 me-2">
+                  <img src="Images/channel icon/channels12_profile.jpg" class="rounded-circle" width="36" height="36"  alt="Channel icon">
+                </div>
+                <div>
+                  <h6 class="card-title text-white mb-1" style="font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Why Your Video buffer Even on Fast Internet – The Real Reason!</h6>
+                  <p class="card-text text-secondary mb-0" style="font-size: 0.8rem;">BrotoType Malayalam</p>
+                  <p class="card-text text-secondary" style="font-size: 0.8rem;">21K views · 21 hours ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+  </main>
+</section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+</body>
+</html>
